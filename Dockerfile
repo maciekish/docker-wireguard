@@ -11,6 +11,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install dependencies ****" && \
+  modprobe wireguard
   apt-get update && \
   apt-get install -y --no-install-recommends \
     bc \
